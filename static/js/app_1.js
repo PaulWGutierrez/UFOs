@@ -2,7 +2,6 @@
 const tableData = data;
 // Reference the HTML table using d3
 var tbody = d3.select("tbody");
-
 function buildTable(data) {
     // First, clear out any existing data
     tbody.html("");
@@ -41,7 +40,6 @@ function handleClick() {
     // just be the original tableData.
     buildTable(filteredData);
 };
-
 // Attach an event to listen for the form button
 d3.selectAll("#filter-btn").on("click", handleClick);
 
